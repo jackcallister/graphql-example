@@ -20,7 +20,6 @@ const User = {
   }
 }
 
-
 // Type definitions for GraphQL
 const UserType = new GraphQLObjectType({
   name: 'User',
@@ -52,7 +51,7 @@ const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'RootQueryType',
     fields: {
-      user : {
+      user: {
         type: UserType,
         args: {
           id: {
